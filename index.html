@@ -1,0 +1,77 @@
+—<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vonitkay — Home</title>
+  <meta name="description" content="Vonitkay — Personal / project homepage" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">Vonitkay</a>
+      <nav class="nav" id="nav">
+        <a href="#about">O nás</a>
+        <a href="#projects">Produkty</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Vítejte ve světě Vonítkay</h1>
+        <p class="lead">Čekají tu na Vás okouzlující vonítka, účinná čistítka a ruzné další prémiové produkty a služby, které si určitě zamilujete. Nezapomeňte navštívit náší blog sekci, kde najdete novinky a další užitečné informace.</p>
+        <p><a class="btn" href="#projects">Nahlédněte do světa vonítek</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>O Vonítkay</h2>
+      <p>Vonítkay vonítkuje od listopadu 2025. Vzniklo jako projekt dvou slečen, které milují vše, co je krásné, čisté, voňavé, zdravé a zároveň šetrné k přírodě. Jednoho dne se rozhodly, že své zkušenosti využijí k výrobě luxusních self-care produktů i pro ostatní. Věříme totiž, že si zasloužíte opravdovou kvalitu. Každý náš produkt je díky ruční výrobě unikát. Vyrábíme zásadně z eko (pokud je to možné) surovin od vybraných dodavatelů. Kromě pár stálých produktů vyrábíme v tzv. (limitovaných) edicích, kde je od každého produktu pouze omezený počet kusů. Edice se různě vrací a střídají, takže pokud Vám Váš oblíbený produkt dojde dříve, než se v rámci limitované edice opět objeví v nabídce, můžete buď počkat, nebo nás kontaktovat s žádostí o objednávku. Pro Vás se speciálními požadavky nabízíme službu "Výroba na míru", kdy Vám na objednávku uděláme produkty dle Vašich individuálních potřeb.
+      </p>
+      <h2>Nová služba - Spolupráce</h2>
+      <p>Připravujeme důležitou spolupráci, která by výrazně ovlivnila rozsah a kvalitu poskytovaných služeb.
+      Více snad již brzy...
+      </p>
+    </section>
+
+    <section id="projects" class="container section">
+      <h2>Druhy produktů</h2>
+      <ul class="projects">
+        <li>
+          <h3>Péče o sebe</h3>
+          <p>Brief description. Link to the repository or demo.</p>
+        </li>
+        <li>
+          <h3>Kosmetika</h3>
+          <p>Brief description. Link to the repository or demo.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Kontakt</h2>
+      <p>If you want to reach me, open an issue on this repository or add contact details here.</p>
+      <form id="contact-form" class="contact-form" onsubmit="handleContact(event)">
+        <label for="email">email</label>
+        <input id="email" type="email" placeholder="email@email.cz" required>
+        <label for="message">Napište nám</label>
+        <textarea id="message" rows="4" placeholder="Dobrý den, rád/a bych..." required></textarea>
+        <button class="btn" type="submit">Send</button>
+        <p id="form-result" class="form-result" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>SLEDUJTE NÁS:</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
